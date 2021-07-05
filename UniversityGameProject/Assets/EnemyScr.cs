@@ -3,6 +3,12 @@ using UnityEngine;
 
 public class EnemyScr : MonoBehaviour
 {
+    public GameObject Bullet;
+    public float Power;
+
+    public List<GameObject> bulets = new List<GameObject>();
+
+
     public Transform player;
     public Transform enemy;
     public float distDetection = 3;
@@ -17,25 +23,47 @@ public class EnemyScr : MonoBehaviour
     {
         //Debug.Log(Vector3.Distance(player.position, enemy.position).ToString());
 
-        if (Vector3.Distance(player.position, enemy.position) <= 3.0f)
+        if (Vector3.Distance(player.position, enemy.position) <= 4.0f)
         {
             detect = true;
-            if(posForMove.Count == 1)
-                posForMove.RemoveAt(0);
+            //if(posForMove.Count == 1)
+            //    posForMove.RemoveAt(0);
         }
 
         if (detect)
         {
-            var look_dir = player.position - enemy.position;
-            look_dir.y = 0;
-            enemy.rotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
-            enemy.position += enemy.forward * move_speed * Time.deltaTime;
+            if(Vector3.Distance(player.position, enemy.position) < 2f)
+            {
+                Attack();
+            }
+            else
+            {
+                var look_dir = player.position - enemy.position;
+                look_dir.y = 0;
+                enemy.rotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
+                enemy.position += enemy.forward * move_speed * Time.deltaTime;
+            }
         }
 
-        if (Vector3.Distance(player.position, enemy.position) > 3.0f)
+        if (Vector3.Distance(player.position, enemy.position) > 4.0f)
         {
             detect = false;
-            JustMove();
+            //JustMove();
+        }
+    }
+
+    private void Attack()
+    {
+        if (bulets.Count == 0)
+        {
+            var look_dir = player.position - enemy.position;
+            look_dir.y = 0;
+            var buletRotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), 3);
+
+            GameObject b = Instantiate(Bullet, transform.position, buletRotation);
+            b.transform.localScale.Set(0.01f, 0.01f, 0.01f);
+            bulets.Add(b);
+            b.GetComponent<Rigidbody>().AddForce(enemy.forward * Power, ForceMode.Impulse);
         }
     }
 

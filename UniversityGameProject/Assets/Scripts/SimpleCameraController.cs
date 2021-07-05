@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace UnityTemplateProjects
 {
     public class SimpleCameraController : MonoBehaviour
     {
         
-        float a = 13;
+        float a = 27;
         float temp = 0;
         private void Update()
         {
