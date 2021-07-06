@@ -30,19 +30,44 @@ public class PlayerController : MonoBehaviour
     }
 
     private float rt = 0;
+    private float angle = 0;
+
+    float prevangle = 0;
+
 	private void OnControllerColliderHit(ControllerColliderHit hit)
 	{
 		
 	}
 	private void FixedUpdate()
 	{
+        prevangle = angle;
+        angle = Mathf.Atan2(Vector3.Normalize(Direction).z, -Vector3.Normalize(Direction).x) * Mathf.Rad2Deg + 90;
+
         Camera.orthographicSize = Mathf.Lerp(Camera.orthographicSize, ScrollSize, InterpFactor);
 
         Velocity = Vector3.Lerp(Velocity, ButtonDown ? Vector3.Normalize(Direction) * Time.deltaTime * Speed : Vector3.zero, InterpFactor);
         Rigidbody.velocity = Velocity;
 
+
         Camera.transform.parent.position = Vector3.Lerp(Camera.transform.parent.position, transform.position, InterpFactor);
-        rt = Mathf.Lerp(rt, Mathf.Atan2(Vector3.Normalize(Direction).z, -Vector3.Normalize(Direction).x) * Mathf.Rad2Deg + 90, InterpFactor);
+
+		if (Mathf.Abs(angle - rt) > 180)
+		{
+			if (angle > rt)
+			{
+                rt = Mathf.Lerp(rt + 360, angle, InterpFactor);
+            }
+			else
+			{
+                rt = Mathf.Lerp(rt - 360, angle, InterpFactor);
+            }
+        }
+		else
+		{
+            rt = Mathf.Lerp(rt, angle, InterpFactor);
+        }
+
+        
         transform.rotation = Quaternion.Euler(0, rt , 0);
     }
 	void Update()
@@ -50,7 +75,7 @@ public class PlayerController : MonoBehaviour
         ButtonDown = Input.anyKey;
         
         Direction = Vector3.Normalize(Direction);
-
+        
         if (Input.GetKey(KeyCode.W))
             Direction += Up;
         if (Input.GetKey(KeyCode.A))
