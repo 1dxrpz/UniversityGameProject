@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(DrawSolidArc))]
 public class ParticleController : MonoBehaviour
 {
     [Range(0, 360)]
@@ -27,7 +26,7 @@ public class ParticleController : MonoBehaviour
         Gizmos.DrawRay(transform.position, upRayDirection);
         Gizmos.DrawRay(transform.position, downRayDirection);
         Gizmos.DrawLine(transform.position + downRayDirection, transform.position + upRayDirection);
-        Gizmos.DrawWireMesh
+        
     }
 
     void Start()
