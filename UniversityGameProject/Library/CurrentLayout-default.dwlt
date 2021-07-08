@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 78
+  controlID: 15
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -426,7 +426,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 50fbffff
+      m_ExpandedIDs: 4698ffff50fbffffe4480000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -486,9 +486,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.624561, y: -6.7657204, z: 10.880988}
+    m_Target: {x: -2.0136337, y: 8.691775, z: -6.6112423}
     speed: 2
-    m_Value: {x: 9.624561, y: -6.7657204, z: 10.880988}
+    m_Value: {x: -2.0136337, y: 8.691775, z: -6.6112423}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -535,9 +535,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.21254607, y: 0.347135, z: -0.0810967, w: 0.9098051}
+    m_Target: {x: 0.07322401, y: 0.5363325, z: -0.046779357, w: 0.8395229}
     speed: 2
-    m_Value: {x: -0.21254605, y: -0.34713498, z: 0.0810967, w: -0.9098051}
+    m_Value: {x: 0.07315371, y: 0.53759086, z: -0.04688911, w: 0.838717}
   m_Size:
     m_Target: 10
     speed: 2
@@ -629,21 +629,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\HP\Desktop\UniversityGameProject\UniversityGameProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c64a0000
-    m_LastClickedID: 19142
+    m_SelectedIDs: de4a0000
+    m_LastClickedID: 19166
     m_ExpandedIDs: 00000000c04a0000c24a0000c44a0000c64a0000c84a0000ca4a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ba0e0800d4df0700a84c00009a54000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
