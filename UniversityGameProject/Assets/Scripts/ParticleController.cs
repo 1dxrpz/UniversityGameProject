@@ -25,13 +25,17 @@ public enum DestroyType
     Distance,
     Time
 }
+
 public class ParticleController : MonoBehaviour
 {
     public HideType HideType = HideType.Destroy;
     public PositionType PositionType = PositionType.Relative;
     public DestroyType DestroyType = DestroyType.Distance;
-
     public bool IsPaused = true;
+    public bool EnableTimer = false;
+
+    [Min(0)]
+    public float Timer = 1f;
 
     [Range(0, 360)]
     public float AngleX = 0f;
@@ -78,8 +82,18 @@ public class ParticleController : MonoBehaviour
     }
 
     float counter = 0;
+    float timerCounter = 0;
     void Update()
     {
+		if (EnableTimer && !IsPaused)
+		{
+            timerCounter += .1f;
+			if (timerCounter >= Timer)
+			{
+                IsPaused = true;
+                timerCounter = 0;
+			}
+		}
         AdditionalAngle = Mathf.Atan(Radius / (Distance * 20)) * Mathf.Rad2Deg * Random.Range(0, PositionOffset);
 		if (!IsPaused)
 		{
@@ -97,10 +111,10 @@ public class ParticleController : MonoBehaviour
 	{
         IsPaused = true;
 	}
-	public void Start()
+	public void Play()
 	{
         IsPaused = false;
-	}
+    }
     public void Toggle()
 	{
         IsPaused = !IsPaused;
