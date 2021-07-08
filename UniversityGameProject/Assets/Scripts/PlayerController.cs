@@ -2,23 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlayerType
-{
-    Eevee,
-    Flareon
-}
-
 public class PlayerController : MonoBehaviour
 {
-    public PlayerType PlayerType = PlayerType.Eevee;
     public float Speed = 2f;
     public float InterpFactor = .03f;
     public Camera Camera;
+<<<<<<< HEAD
 
 
     public ParticleController UndergroundParticles;
     public ParticleController[] PuffParticles;
 
+=======
+    public GameObject CameraContainer;
+    public float Distance = 10f;
+    
+>>>>>>> parent of e900370 (particles & first ability)
     private bool ButtonDown = false;
     private float MScroll = 0;
     public float MaxSize = 4f;
@@ -45,6 +44,10 @@ public class PlayerController : MonoBehaviour
 
     float prevangle = 0;
 
+	private void OnControllerColliderHit(ControllerColliderHit hit)
+	{
+		
+	}
 	private void FixedUpdate()
 	{
         prevangle = angle;
@@ -77,13 +80,8 @@ public class PlayerController : MonoBehaviour
         
         transform.rotation = Quaternion.Euler(0, rt , 0);
     }
-    bool underFloor = false;
-    bool changing = false;
-    float changeTime = 0;
-    Vector3 tempPosition;
 	void Update()
     {
-
         ButtonDown = Input.anyKey;
         
         Direction = Vector3.Normalize(Direction);
@@ -108,46 +106,10 @@ public class PlayerController : MonoBehaviour
             ScrollSize += MScroll * 2f;
 
 
-        if (Input.GetKeyDown(KeyCode.E) && underFloor && !changing)
-        {
-            underFloor = false;
-            changing = true;
-            tempPosition = transform.position + new Vector3(0, .5f, 0);
-            UndergroundParticles.Pause();
-        }
-        if (Input.GetKeyDown(KeyCode.E) && !underFloor && !changing)
+		if (MScroll > 0)
 		{
-            underFloor = true;
-            changing = true;
-            tempPosition = transform.position + new Vector3(0, -.5f, 0);
-            Puff();
-        }
-        
-        if (changing)
-		{
-            changeTime += .1f;
-			if (changeTime >= 10f)
-			{
-				if (underFloor)
-				{
-                    UndergroundParticles.Play();
-                }
-                changing = false;
-                changeTime = 0;
-			}
-            transform.position = Vector3.Lerp(
-                transform.position,
-                tempPosition,
-                .01f
-            );
-        }
+
+		}
 
     }
-    public void Puff()
-	{
-		foreach (var item in PuffParticles)
-		{
-            item.Play();
-		}
-	}
 }
