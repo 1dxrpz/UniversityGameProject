@@ -8,11 +8,17 @@ public class PlayerController : MonoBehaviour
     public float InterpFactor = .03f;
     public Camera Camera;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
     public ParticleController UndergroundParticles;
     public ParticleController[] PuffParticles;
 
+=======
+    public GameObject CameraContainer;
+    public float Distance = 10f;
+    
+>>>>>>> parent of e900370 (particles & first ability)
 =======
     public GameObject CameraContainer;
     public float Distance = 10f;
@@ -98,6 +104,7 @@ public class PlayerController : MonoBehaviour
         MScroll = Input.GetAxis("Mouse ScrollWheel");
 
 
+<<<<<<< HEAD
         if(Mathf.Sign(MScroll) == -1 && ScrollSize >= MinSize)
         {
             ScrollSize += MScroll * 2f;
@@ -111,5 +118,13 @@ public class PlayerController : MonoBehaviour
 
 		}
 
+=======
+		if (MScroll > 0)
+		{
+
+		}
+
+        
+>>>>>>> parent of e900370 (particles & first ability)
     }
 }
