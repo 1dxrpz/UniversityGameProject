@@ -7,11 +7,11 @@ public class PlayerController : MonoBehaviour
     public float Speed = 2f;
     public float InterpFactor = .03f;
     public Camera Camera;
-    public GameObject CameraContainer;
-    public float Distance = 10f;
     
     private bool ButtonDown = false;
     private float MScroll = 0;
+    public float MaxSize = 4f;
+    public float MinSize = 1f;
 
     float ScrollSize;
 
@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
 	{
 		
 	}
+
 	private void FixedUpdate()
 	{
         prevangle = angle;
@@ -87,13 +88,13 @@ public class PlayerController : MonoBehaviour
 
         MScroll = Input.GetAxis("Mouse ScrollWheel");
 
-        ScrollSize += MScroll * 2f;
+        if(Mathf.Sign(MScroll) == -1 && ScrollSize >= MinSize)
+        {
+            ScrollSize += MScroll * 2f;
+        }
+        if(Mathf.Sign(MScroll) == 1 && ScrollSize <= MaxSize)
+            ScrollSize += MScroll * 2f;
 
-		if (MScroll > 0)
-		{
 
-		}
-
-        
     }
 }
