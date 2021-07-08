@@ -14,14 +14,14 @@ public class PlayerController : MonoBehaviour
     public float Speed = 2f;
     public float InterpFactor = .03f;
     public Camera Camera;
-    public GameObject CameraContainer;
-    public float Distance = 10f;
 
     public ParticleController UndergroundParticles;
     public ParticleController[] PuffParticles;
 
     private bool ButtonDown = false;
     private float MScroll = 0;
+    public float MaxSize = 4f;
+    public float MinSize = 1f;
 
     float ScrollSize;
 
@@ -98,7 +98,12 @@ public class PlayerController : MonoBehaviour
 
         MScroll = Input.GetAxis("Mouse ScrollWheel");
 
-        ScrollSize += MScroll * 2f;
+        if (Mathf.Sign(MScroll) == -1 && ScrollSize >= MinSize)
+        {
+            ScrollSize += MScroll * 2f;
+        }
+        if (Mathf.Sign(MScroll) == 1 && ScrollSize <= MaxSize)
+            ScrollSize += MScroll * 2f;
 
         if (Input.GetKeyDown(KeyCode.E) && underFloor && !changing)
         {

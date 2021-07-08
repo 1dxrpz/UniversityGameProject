@@ -6,8 +6,7 @@ public class EnemyScr : MonoBehaviour
     public GameObject Bullet;
     public float Power;
 
-    public List<GameObject> bulets = new List<GameObject>();
-
+    public GameObject[] CounOfBulets;
 
     public Transform player;
     public Transform enemy;
@@ -23,7 +22,7 @@ public class EnemyScr : MonoBehaviour
     {
         //Debug.Log(Vector3.Distance(player.position, enemy.position).ToString());
 
-        if (Vector3.Distance(player.position, enemy.position) <= 4.0f)
+        if (Vector3.Distance(player.position, enemy.position) <= 8.0f)
         {
             detect = true;
             //if(posForMove.Count == 1)
@@ -32,9 +31,18 @@ public class EnemyScr : MonoBehaviour
 
         if (detect)
         {
-            if(Vector3.Distance(player.position, enemy.position) < 2f)
+            if(Vector3.Distance(player.position, enemy.position) < 5f)
             {
-                Attack();
+                //var look_dir = (player.position - enemy.position).normalized;
+                ///if (Quaternion.LookRotation(look_dir) != enemy.rotation)
+                //{
+                    //look_dir.y = 0;
+                    //enemy.rotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
+                //}
+                //else
+                ///{
+                    Attack();
+                //}
             }
             else
             {
@@ -48,22 +56,25 @@ public class EnemyScr : MonoBehaviour
         if (Vector3.Distance(player.position, enemy.position) > 4.0f)
         {
             detect = false;
-            //JustMove();
+            JustMove();
         }
     }
 
     private void Attack()
     {
-        if (bulets.Count == 0)
-        {
-            var look_dir = player.position - enemy.position;
-            look_dir.y = 0;
-            var buletRotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), 3);
+        CounOfBulets = GameObject.FindGameObjectsWithTag("Bulet");
 
-            GameObject b = Instantiate(Bullet, transform.position, buletRotation);
-            b.transform.localScale.Set(0.01f, 0.01f, 0.01f);
-            bulets.Add(b);
-            b.GetComponent<Rigidbody>().AddForce(enemy.forward * Power, ForceMode.Impulse);
+        if (CounOfBulets.Length < 1)
+        {
+            var look_dir = (player.position - enemy.position).normalized;
+            look_dir.y = 0;
+
+            GameObject b = Instantiate(Bullet, transform.position, transform.rotation);
+            b.tag = "Bulet";
+
+            var light = GameObject.FindGameObjectWithTag("TagForPokebols");
+
+            b.GetComponent<Rigidbody>().AddForce(look_dir * Power, ForceMode.Impulse);
         }
     }
 
