@@ -9,6 +9,7 @@ public class BuletCheck : MonoBehaviour
     public GameObject Player;
 
     private int counter = 0;
+    private int timePokebol = 0;
 
     void Update()
     {
@@ -32,6 +33,10 @@ public class BuletCheck : MonoBehaviour
                 counter = 0;
             }
         }
+        timePokebol++;
+
+        if(timePokebol >= 1000)
+            Destroy(GameObject.FindGameObjectWithTag("Bulet"));
     }
 
     private void OnTriggerEnter(Collider other)
