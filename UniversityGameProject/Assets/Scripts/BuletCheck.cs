@@ -7,7 +7,9 @@ public class BuletCheck : MonoBehaviour
     private bool PlayerInZone = false;
 
     public GameObject Player;
-    //public GameObject Pokebol;
+
+    private int counter = 0;
+    private int timePokebol = 0;
 
     void Update()
     {
@@ -23,7 +25,18 @@ public class BuletCheck : MonoBehaviour
             GetComponent<Rigidbody>().angularDrag = 100f;
 
             transform.position += new Vector3(0, .6f * Time.deltaTime, 0);
+            counter++;
+
+            if(counter >= 300)
+            {
+                Destroy(GameObject.FindGameObjectWithTag("Bulet"));
+                counter = 0;
+            }
         }
+        timePokebol++;
+
+        if(timePokebol >= 1000)
+            Destroy(GameObject.FindGameObjectWithTag("Bulet"));
     }
 
     private void OnTriggerEnter(Collider other)

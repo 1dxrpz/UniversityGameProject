@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
 		}
         PlayerIcons[i].SetActive(true);
     }
-    bool underFloor = false;
+    internal bool underFloor = false;
     bool changing = false;
     float changeTime = 0;
     bool ability = false;
