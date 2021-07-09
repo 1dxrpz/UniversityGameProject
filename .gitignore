@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-# UniversityGameProject/[Ll]ibrary/
+UniversityGameProject/[Ll]ibrary/
 UniversityGameProject/[Tt]emp/
 UniversityGameProject/[Oo]bj/
 UniversityGameProject/[Bb]uild/
@@ -74,3 +74,4 @@ UniversityGameProject/Library/ShaderCache.db
 UniversityGameProject/Library/SceneVisibilityState.asset
 UniversityGameProject/Library/SourceAssetDB
 UniversityGameProject/Library/SceneVisibilityState.asset
+UniversityGameProject/Library/SourceAssetDB
