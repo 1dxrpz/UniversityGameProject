@@ -3865,12 +3865,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9520ee1664d0dfd418d152c6d5e0b708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 919132149542515866}
   Bullet: {fileID: 7181873245138251951, guid: a117a4d6256b5334c9b67a841055d1ef, type: 3}
   Power: 10
   CounOfBulets: []
   player: {fileID: 543450653212487200}
   distDetection: 3
-  move_speed: 1.5
+  move_speed: 1
   rotation_speed: 3
   posForMove: []
 --- !u!65 &1742062973

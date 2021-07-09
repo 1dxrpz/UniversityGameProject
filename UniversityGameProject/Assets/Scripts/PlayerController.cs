@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
         
         transform.rotation = Quaternion.Euler(0, rt , 0);
     }
-    bool underFloor = false;
+    internal bool underFloor = false;
     bool changing = false;
     float changeTime = 0;
     Vector3 tempPosition;

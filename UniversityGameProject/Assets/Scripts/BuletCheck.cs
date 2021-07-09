@@ -7,7 +7,6 @@ public class BuletCheck : MonoBehaviour
     private bool PlayerInZone = false;
 
     public GameObject Player;
-    //public GameObject Pokebol;
 
     private int counter = 0;
 
