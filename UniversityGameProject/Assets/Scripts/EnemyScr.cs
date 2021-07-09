@@ -9,7 +9,6 @@ public class EnemyScr : MonoBehaviour
     public GameObject[] CounOfBulets;
 
     public Transform player;
-    public Transform enemy;
     public float distDetection = 3;
     public float move_speed;
     public float rotation_speed;
@@ -20,40 +19,39 @@ public class EnemyScr : MonoBehaviour
     
     void Update()
     {
-        //Debug.Log(Vector3.Distance(player.position, enemy.position).ToString());
 
-        if (Vector3.Distance(player.position, enemy.position) <= 8.0f)
+        if (Vector3.Distance(player.position, transform.position) <= 8.0f)
         {
             detect = true;
-            //if(posForMove.Count == 1)
+            //if (posForMove.Count == 1)
             //    posForMove.RemoveAt(0);
         }
 
         if (detect)
         {
-            if(Vector3.Distance(player.position, enemy.position) < 5f)
+            if(Vector3.Distance(player.position, transform.position) < 5f)
             {
-                //var look_dir = (player.position - enemy.position).normalized;
-                ///if (Quaternion.LookRotation(look_dir) != enemy.rotation)
-                //{
+                var look_dir = (player.position - transform.position).normalized;
+                if (Quaternion.LookRotation(look_dir).eulerAngles.y != transform.rotation.eulerAngles.y)
+                {
                     //look_dir.y = 0;
-                    //enemy.rotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
-                //}
-                //else
-                ///{
+                    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(look_dir), rotation_speed * 5 * Time.deltaTime);
+                }
+                else
+                {
                     Attack();
-                //}
-            }
+                }
+        }
             else
             {
-                var look_dir = player.position - enemy.position;
+                var look_dir = player.position - transform.position;
                 look_dir.y = 0;
-                enemy.rotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
-                enemy.position += enemy.forward * move_speed * Time.deltaTime;
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
+                transform.position += transform.forward * move_speed * Time.deltaTime;
             }
         }
 
-        if (Vector3.Distance(player.position, enemy.position) > 4.0f)
+        if (Vector3.Distance(player.position, transform.position) > 8.0f)
         {
             detect = false;
             JustMove();
@@ -66,13 +64,11 @@ public class EnemyScr : MonoBehaviour
 
         if (CounOfBulets.Length < 1)
         {
-            var look_dir = (player.position - enemy.position).normalized;
-            look_dir.y = 0;
+            var look_dir = (player.position - transform.position).normalized;
+            //look_dir.y = 0;
 
-            GameObject b = Instantiate(Bullet, transform.position, transform.rotation);
+            GameObject b = Instantiate(Bullet, base.transform.position, base.transform.rotation);
             b.tag = "Bulet";
-
-            var light = GameObject.FindGameObjectWithTag("TagForPokebols");
 
             b.GetComponent<Rigidbody>().AddForce(look_dir * Power, ForceMode.Impulse);
         }
@@ -85,16 +81,16 @@ public class EnemyScr : MonoBehaviour
             var randomPointZ = Random.Range(-5, 5);
             var randomPointX = Random.Range(-5, 5);
 
-            posForMove.Add(new Vector3(Random.Range(enemy.position.x, enemy.position.x + randomPointX), 0, 
-                Random.Range(enemy.position.z, enemy.position.z + randomPointZ)));
+            posForMove.Add(new Vector3(Random.Range(transform.position.x, transform.position.x + randomPointX), 0, 
+                Random.Range(transform.position.z, transform.position.z + randomPointZ)));
         }
 
-        var look_dir = posForMove[0] - enemy.position;
+        var look_dir = posForMove[0] - transform.position;
         look_dir.y = 0;
-        enemy.rotation = Quaternion.Slerp(enemy.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
-        enemy.position += enemy.forward * move_speed * Time.deltaTime;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(look_dir), rotation_speed * Time.deltaTime);
+        transform.position += transform.forward * move_speed * Time.deltaTime;
 
-        if(CheckPointTrue(enemy.position, posForMove[0]))
+        if(CheckPointTrue(transform.position, posForMove[0]))
         {
             posForMove.RemoveAt(0);
         }

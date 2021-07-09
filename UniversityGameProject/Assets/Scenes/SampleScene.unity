@@ -3683,10 +3683,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 500
   field of view: 31
   orthographic: 1
-  orthographic size: 1.67
+  orthographic size: 2.12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3847,7 +3847,7 @@ GameObject:
   - component: {fileID: 1742062973}
   - component: {fileID: 1742062971}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3869,7 +3869,6 @@ MonoBehaviour:
   Power: 10
   CounOfBulets: []
   player: {fileID: 543450653212487200}
-  enemy: {fileID: 1742062976}
   distDetection: 3
   move_speed: 1.5
   rotation_speed: 3

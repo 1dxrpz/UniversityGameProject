@@ -9,6 +9,8 @@ public class BuletCheck : MonoBehaviour
     public GameObject Player;
     //public GameObject Pokebol;
 
+    private int counter = 0;
+
     void Update()
     {
         if (PlayerInZone)
@@ -23,6 +25,13 @@ public class BuletCheck : MonoBehaviour
             GetComponent<Rigidbody>().angularDrag = 100f;
 
             transform.position += new Vector3(0, .6f * Time.deltaTime, 0);
+            counter++;
+
+            if(counter >= 300)
+            {
+                Destroy(GameObject.FindGameObjectWithTag("Bulet"));
+                counter = 0;
+            }
         }
     }
 
