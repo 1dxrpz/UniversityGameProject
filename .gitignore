@@ -46,6 +46,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.json
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -72,3 +73,4 @@ UniversityGameProject/[Aa]ssets/[Ss]treamingAssets/aa/*
 UniversityGameProject/Library/ShaderCache.db
 UniversityGameProject/Library/SceneVisibilityState.asset
 UniversityGameProject/Library/SourceAssetDB
+UniversityGameProject/Library/SceneVisibilityState.asset
