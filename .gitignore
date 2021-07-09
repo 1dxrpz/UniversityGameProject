@@ -70,3 +70,7 @@ UniversityGameProject/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 UniversityGameProject/[Aa]ssets/[Ss]treamingAssets/aa.meta
 UniversityGameProject/[Aa]ssets/[Ss]treamingAssets/aa/*
 UniversityGameProject/Library/ShaderCache.db
+UniversityGameProject/Library/ArtifactDB
+UniversityGameProject/Library/ShaderCache.db
+UniversityGameProject/Library/SourceAssetDB
+UniversityGameProject/Logs/AssetImportWorker0.log
