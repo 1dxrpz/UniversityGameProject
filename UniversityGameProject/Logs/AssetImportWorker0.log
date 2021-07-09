@@ -15,11 +15,11 @@ C:/Users/HP/Desktop/UniversityGameProject/UniversityGameProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63975
+64308
 Successfully changed project path to: C:/Users/HP/Desktop/UniversityGameProject/UniversityGameProject
 C:/Users/HP/Desktop/UniversityGameProject/UniversityGameProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 76.48 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 46.29 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -36,108 +36,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002338 seconds.
+Registered in 0.116094 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 63.86 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 49.16 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.214 seconds
+- Completed reload, in  3.579 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006040 seconds.
+Registered in 0.004401 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 46.02 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.118 seconds
+- Completed reload, in  3.552 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.5 MB.
-System memory in use after: 151.7 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3189.
-Total: 2.314000 ms (FindLiveObjects: 0.237900 ms CreateObjectMapping: 0.116700 ms MarkObjects: 1.843900 ms  DeleteObjects: 0.114500 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Pokeball 1.prefab
-  artifactKey: Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pokeball 1.prefab using Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild ()
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
- -> (artifact id: '2c55bf2eaa8b07a4c83a4b7ad59a7899') in 0.212905 seconds
-  Import took 0.217316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.072911 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33c3208185ca43bd8e5d4f9a2cedec9') in 0.005597 seconds
-  Import took 0.009520 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004492 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33c3208185ca43bd8e5d4f9a2cedec9') in 0.002775 seconds
-  Import took 0.007328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.697687 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156741255d19c32a29e6aa42e962bc31') in 0.007151 seconds
-  Import took 0.011374 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004146 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
 Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.096 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.5 MB.
-System memory in use after: 147.7 MB.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.3 MB.
+System memory in use after: 151.5 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3243.
-Total: 2.620100 ms (FindLiveObjects: 0.273400 ms CreateObjectMapping: 0.129900 ms MarkObjects: 2.196100 ms  DeleteObjects: 0.019100 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3189.
+Total: 2.371600 ms (FindLiveObjects: 0.238200 ms CreateObjectMapping: 0.121500 ms MarkObjects: 1.908500 ms  DeleteObjects: 0.102500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 86.383443 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
+  path: Assets/LeafeonRUN 1.obj
+  artifactKey: Guid(f4a775818c0f8974a970a42bb532c1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeafeonRUN 1.obj using Guid(f4a775818c0f8974a970a42bb532c1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
 You must inherit from Editor. See the Editor class script documentation.
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
@@ -148,89 +84,193 @@ UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool)
 UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool)
 UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
 
- -> (artifact id: 'd893aa49fee21e8f1db92efb74b64f95') in 0.036208 seconds
-  Import took 0.040437 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004210 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.044 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2592 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.6 MB.
-System memory in use after: 147.8 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3244.
-Total: 2.446500 ms (FindLiveObjects: 0.260100 ms CreateObjectMapping: 0.118600 ms MarkObjects: 2.050300 ms  DeleteObjects: 0.016600 ms)
+ -> (artifact id: 'b69cd412801f2038b43d88f7ec842760') in 0.270298 seconds
+  Import took 0.274750 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 444.602768 seconds.
-  path: Assets/Pokeball 1.prefab
-  artifactKey: Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pokeball 1.prefab using Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
-You must inherit from Editor. See the Editor class script documentation.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogWarning (object)
-UnityEditor.CustomEditorAttributes:Rebuild ()
-UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool)
-UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+  Time since last request: 0.000157 seconds.
+  path: Assets/LeafeonRUN 1.obj
+  artifactKey: Guid(f4a775818c0f8974a970a42bb532c1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeafeonRUN 1.obj using Guid(f4a775818c0f8974a970a42bb532c1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b69cd412801f2038b43d88f7ec842760') in 0.030949 seconds
+  Import took 0.035779 seconds .
 
- -> (artifact id: '001553772ce94565e93fef6e6630e171') in 0.165913 seconds
-  Import took 0.169912 seconds .
+========================================================================
+Received Import Request.
+  Time since last request: 53.801960 seconds.
+  path: Assets/LeafeonRUN.obj
+  artifactKey: Guid(60b7ebcc67870b0468cf24adc68e51c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeafeonRUN.obj using Guid(60b7ebcc67870b0468cf24adc68e51c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0afea0a8c75a72ded7afc67acc6e24') in 0.051525 seconds
+  Import took 0.055983 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005251 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.090 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 147.7 MB.
-System memory in use after: 147.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3285.
-Total: 2.448800 ms (FindLiveObjects: 0.229000 ms CreateObjectMapping: 0.098900 ms MarkObjects: 2.102200 ms  DeleteObjects: 0.017400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005347 seconds.
+Registered in 0.004978 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.984 seconds
+- Completed reload, in  1.058 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2592 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 147.8 MB.
+System memory in use after: 148.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3279.
+Total: 2.222000 ms (FindLiveObjects: 0.252900 ms CreateObjectMapping: 0.127200 ms MarkObjects: 1.823300 ms  DeleteObjects: 0.017100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004186 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.993 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.9 MB.
 System memory in use after: 148.1 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3286.
-Total: 2.729700 ms (FindLiveObjects: 0.310700 ms CreateObjectMapping: 0.191500 ms MarkObjects: 2.202100 ms  DeleteObjects: 0.024200 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3282.
+Total: 2.397500 ms (FindLiveObjects: 0.225400 ms CreateObjectMapping: 0.099000 ms MarkObjects: 2.056600 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 321.856876 seconds.
+  path: Assets/VaporeonRUN.obj
+  artifactKey: Guid(9dcb0505ebff8894fbcc6b1535ca5aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VaporeonRUN.obj using Guid(9dcb0505ebff8894fbcc6b1535ca5aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
+You must inherit from Editor. See the Editor class script documentation.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.CustomEditorAttributes:Rebuild ()
+UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool)
+UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+ -> (artifact id: '503d20d71e7a0a81db18fdf624d7ed3d') in 0.231918 seconds
+  Import took 0.237200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.097684 seconds.
+  path: Assets/LeafeonRUN.mtl
+  artifactKey: Guid(9123399ee7b872447b7327291aa6a7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeafeonRUN.mtl using Guid(9123399ee7b872447b7327291aa6a7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68c839f4202e3b1d273e49d40d6a88c') in 0.004867 seconds
+  Import took 0.009060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.400617 seconds.
+  path: Assets/VaporeonRUN.mtl
+  artifactKey: Guid(a4baa050c79de4947b9cfe2603851982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VaporeonRUN.mtl using Guid(a4baa050c79de4947b9cfe2603851982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870e489c6f416b0625ca7beb38e06344') in 0.002320 seconds
+  Import took 0.006817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.816782 seconds.
+  path: Assets/VaporeonRUN 1.mtl
+  artifactKey: Guid(033af26a5fb925f4d89182ec592c5e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VaporeonRUN 1.mtl using Guid(033af26a5fb925f4d89182ec592c5e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf52e88c90f8baf07bf34e9faa53ceb') in 0.006776 seconds
+  Import took 0.010722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.949962 seconds.
+  path: Assets/FlareonRUN.obj
+  artifactKey: Guid(8f3d230f42ea7fe458f288ba3ac1b302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlareonRUN.obj using Guid(8f3d230f42ea7fe458f288ba3ac1b302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc600a344d0d74152696beab8a333e1d') in 0.054404 seconds
+  Import took 0.058374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.806085 seconds.
+  path: Assets/FlareonRUN.mtl
+  artifactKey: Guid(2422a79e8fda2c344aa838b32548313d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlareonRUN.mtl using Guid(2422a79e8fda2c344aa838b32548313d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1cec966a6401318bec134fcda1b091') in 0.003330 seconds
+  Import took 0.008661 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005342 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.027 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.0 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3321.
+Total: 2.665000 ms (FindLiveObjects: 0.271700 ms CreateObjectMapping: 0.137300 ms MarkObjects: 2.232700 ms  DeleteObjects: 0.022300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004299 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.990 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.1 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3324.
+Total: 2.332800 ms (FindLiveObjects: 0.244100 ms CreateObjectMapping: 0.118900 ms MarkObjects: 1.952600 ms  DeleteObjects: 0.016400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 153.993713 seconds.
+  path: Assets/flarion.controller
+  artifactKey: Guid(5e855529415982c40947e3bf655f172f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/flarion.controller using Guid(5e855529415982c40947e3bf655f172f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
+You must inherit from Editor. See the Editor class script documentation.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.CustomEditorAttributes:Rebuild ()
+UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool)
+UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+ -> (artifact id: '38098e9cdc2e5330f71a8072471826bb') in 0.047838 seconds
+  Import took 0.051942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.102621 seconds.
+  path: Assets/run.controller
+  artifactKey: Guid(17a580de215e66c489deb51d19905926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/run.controller using Guid(17a580de215e66c489deb51d19905926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f21a315873361592b76b836ffd79f35') in 0.012983 seconds
+  Import took 0.017096 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
