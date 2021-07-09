@@ -60,15 +60,15 @@
     <Compile Include="Assets\MeshCombiner\Scripts\MeshCombiner.cs" />
     <Compile Include="Assets\Scripts\VolumeParticle.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
+    <Compile Include="Assets\Scripts\FlareonTrigger.cs" />
+    <Compile Include="Assets\Scripts\BoulderObstacle.cs" />
+    <Compile Include="Assets\Scripts\VaporeonWater.cs" />
     <Compile Include="Assets\Scripts\EnemyScr.cs" />
+    <Compile Include="Assets\Scripts\WaterEnter.cs" />
     <Compile Include="Assets\BrokenVector\LowPolyBrickHouses\Scripts\ModelCustomizer.cs" />
     <Compile Include="Assets\Scripts\BuletCheck.cs" />
     <Compile Include="Assets\Scripts\ParticleController.cs" />
-    <Compile Include="Assets\Scripts\FlareonTrigger.cs" />
-    <Compile Include="Assets\Scripts\VaporeonWater.cs" />
-    <Compile Include="Assets\Scripts\WaterEnter.cs" />
-    <Compile Include="Assets\Scripts\UIController.cs" />
-    <Compile Include="Assets\Scripts\BoulderObstacle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
