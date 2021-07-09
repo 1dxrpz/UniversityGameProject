@@ -15,11 +15,11 @@ C:/Users/HP/Desktop/UniversityGameProject/UniversityGameProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63570
+63975
 Successfully changed project path to: C:/Users/HP/Desktop/UniversityGameProject/UniversityGameProject
 C:/Users/HP/Desktop/UniversityGameProject/UniversityGameProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 61.87 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 76.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -36,44 +36,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001785 seconds.
+Registered in 0.002338 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 48.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 63.86 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.010 seconds
+- Completed reload, in  1.214 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004357 seconds.
+Registered in 0.006040 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 50.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 45.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.103 seconds
+- Completed reload, in  1.118 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.4 MB.
-System memory in use after: 151.6 MB.
+System memory in use before: 151.5 MB.
+System memory in use after: 151.7 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3189.
-Total: 2.385300 ms (FindLiveObjects: 0.246700 ms CreateObjectMapping: 0.120600 ms MarkObjects: 1.908100 ms  DeleteObjects: 0.108500 ms)
+Total: 2.314000 ms (FindLiveObjects: 0.237900 ms CreateObjectMapping: 0.116700 ms MarkObjects: 1.843900 ms  DeleteObjects: 0.114500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/New Material.mat
-  artifactKey: Guid(6e33c559b2dc34b44bdfab676045a8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Material.mat using Guid(6e33c559b2dc34b44bdfab676045a8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
+  path: Assets/Pokeball 1.prefab
+  artifactKey: Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pokeball 1.prefab using Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) HideType uses the CustomEditor attribute but does not inherit from Editor.
 You must inherit from Editor. See the Editor class script documentation.
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
@@ -84,71 +84,30 @@ UnityEditor.CustomEditorAttributes:FindCustomEditorTypeByType (System.Type,bool)
 UnityEditor.CustomEditorAttributes:FindCustomEditorType (UnityEngine.Object,bool)
 UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
 
- -> (artifact id: '96484cf87cf83bed9b5dc79b3aa83be1') in 0.391861 seconds
-  Import took 0.401714 seconds .
+ -> (artifact id: '2c55bf2eaa8b07a4c83a4b7ad59a7899') in 0.212905 seconds
+  Import took 0.217316 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001492 seconds.
-  path: Assets/FlareonRUN.obj
-  artifactKey: Guid(8f3d230f42ea7fe458f288ba3ac1b302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FlareonRUN.obj using Guid(8f3d230f42ea7fe458f288ba3ac1b302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98422c716771e49683d1bb5df0a87f1') in 0.116784 seconds
-  Import took 0.124631 seconds .
+  Time since last request: 0.072911 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33c3208185ca43bd8e5d4f9a2cedec9') in 0.005597 seconds
+  Import took 0.009520 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/water_l.mat
-  artifactKey: Guid(73cc6aa8d0fa08d44802c423c9a55915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/water_l.mat using Guid(73cc6aa8d0fa08d44802c423c9a55915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49d159e03f69fb8589be71c7d98a99a') in 0.013502 seconds
-  Import took 0.017931 seconds .
+  Time since last request: 0.004492 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(e07df38c7126a8a46acf6f019e5dff8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33c3208185ca43bd8e5d4f9a2cedec9') in 0.002775 seconds
+  Import took 0.007328 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/fire.png
-  artifactKey: Guid(06c8a12a3672da347b76087406ebd1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fire.png using Guid(06c8a12a3672da347b76087406ebd1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff7adb4f1b4755287d051bf97a9e0982') in 0.033988 seconds
-  Import took 0.038129 seconds .
+  Time since last request: 0.697687 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156741255d19c32a29e6aa42e962bc31') in 0.007151 seconds
+  Import took 0.011374 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/stamina.png
-  artifactKey: Guid(2943d669127dc974c98966b4ec14a3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/stamina.png using Guid(2943d669127dc974c98966b4ec14a3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015acd5610f5c11ae8fd43626777db2c') in 0.024826 seconds
-  Import took 0.028571 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/vaporeon.png
-  artifactKey: Guid(27a75feff85437e418f30c42f9fb97ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vaporeon.png using Guid(27a75feff85437e418f30c42f9fb97ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51aaaa7df889f4c8bbdde17c29b27f19') in 0.033435 seconds
-  Import took 0.038071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/stamina_bar.png
-  artifactKey: Guid(e76516486e131e443af22e0d512b1989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/stamina_bar.png using Guid(e76516486e131e443af22e0d512b1989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd962f629efc231d736901fe8c43477') in 0.028920 seconds
-  Import took 0.032618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/waterSplash.mat
-  artifactKey: Guid(d41a34f3d061ed0448a3b982687b4a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/waterSplash.mat using Guid(d41a34f3d061ed0448a3b982687b4a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8028eda7d2934833b32beff6f1abc9b') in 0.012705 seconds
-  Import took 0.016982 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Pokeball 1.prefab
-  artifactKey: Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pokeball 1.prefab using Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663768bc2a250aa53a645b990261a87c') in 0.035049 seconds
-  Import took 0.039621 seconds .
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
