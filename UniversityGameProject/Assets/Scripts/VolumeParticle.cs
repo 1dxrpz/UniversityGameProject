@@ -12,7 +12,7 @@ public class VolumeParticle : MonoBehaviour
     bool start = false;
     int time = 0;
     
-    void Update()
+    void FixedUpdate()
     {
 		if (Controller != null && !start)
 		{
@@ -36,7 +36,7 @@ public class VolumeParticle : MonoBehaviour
 		if (start)
 		{
             
-            transform.Translate(Vector3.forward * speed * .001f);
+            transform.Translate(Vector3.forward * speed * .5f * Time.deltaTime);
             time++;
             if (Controller.DestroyType == DestroyType.Distance && Vector3.Distance(Controller.transform.position, transform.position) > Controller.Distance ||
                 Controller.DestroyType == DestroyType.Time && Controller.DestroyTime < time)
