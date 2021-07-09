@@ -70,7 +70,7 @@ public class ParticleController : MonoBehaviour
     public float InterpFactorIn = .01f;
     [Range(0, .5f)]
     public float InterpFactorOut = .01f;
-
+    
     void OnDrawGizmosSelected()
     {
         Quaternion a = Quaternion.AngleAxis(AngleX + (PositionType == PositionType.Relative ? transform.rotation.eulerAngles.y : 0), Vector3.up);
@@ -83,7 +83,7 @@ public class ParticleController : MonoBehaviour
 
     float counter = 0;
     float timerCounter = 0;
-    void Update()
+    void FixedUpdate()
     {
 		if (EnableTimer && !IsPaused)
 		{
