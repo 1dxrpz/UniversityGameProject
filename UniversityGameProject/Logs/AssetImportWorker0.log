@@ -151,3 +151,4 @@ Received Import Request.
 Start importing Assets/Pokeball 1.prefab using Guid(a117a4d6256b5334c9b67a841055d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663768bc2a250aa53a645b990261a87c') in 0.035049 seconds
   Import took 0.039621 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
